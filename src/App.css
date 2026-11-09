@@ -1,0 +1,445 @@
+#root {
+  min-height: 100vh;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  background: #f4f6fb;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+  box-shadow: 0 16px 45px rgba(28, 39, 70, 0.08);
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: #263f91;
+  color: white;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.brand-name {
+  margin-bottom: 12px;
+  color: #263f91;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.login-card h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 30px;
+  letter-spacing: -0.8px;
+}
+
+.subtitle {
+  margin: 10px 0 30px;
+  color: #687187;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #263047;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 13px;
+  border: 1px solid #d8ddea;
+  border-radius: 9px;
+  background: white;
+  color: #172033;
+  font: inherit;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: 2px solid #b9c9ff;
+  border-color: #4969cc;
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-toggle {
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #344f9f;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 13px;
+  border: none;
+  border-radius: 9px;
+  background: #263f91;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background: #1d3277;
+}
+
+.status-message {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #eef2ff;
+  color: #263f91;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-note {
+  margin: 28px 0 0;
+  color: #828ba0;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 28px 22px;
+  }
+}
+
+.dashboard-shell {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f4f6fb;
+}
+
+.dashboard-panel {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 36px;
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e7eaf0;
+}
+
+.dashboard-header .brand-name {
+  margin: 0 0 6px;
+}
+
+.dashboard-subtitle {
+  margin: 0;
+  color: #687187;
+  font-size: 14px;
+}
+
+.dashboard-panel h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 28px;
+}
+
+.dashboard-panel h2 {
+  margin: 0 0 18px;
+  color: #172033;
+  font-size: 19px;
+}
+
+.profile-card {
+  margin-top: 28px;
+  padding: 24px;
+  background: #f8f9fc;
+  border: 1px solid #e7eaf0;
+  border-radius: 12px;
+}
+
+.profile-card p {
+  color: #4c566d;
+  overflow-wrap: anywhere;
+}
+
+.resumes-section {
+  margin-top: 34px;
+}
+
+.resume-list {
+  display: grid;
+  gap: 14px;
+}
+
+.resume-item {
+  padding: 18px;
+  border: 1px solid #e7eaf0;
+  border-radius: 12px;
+  overflow-wrap: anywhere;
+}
+
+.resume-item h3 {
+  margin: 0 0 8px;
+  color: #263f91;
+  font-size: 16px;
+}
+
+.resume-id {
+  margin: 0;
+  color: #687187;
+  font-size: 13px;
+}
+
+.empty-state {
+  padding: 22px;
+  background: #f8f9fc;
+  border-radius: 10px;
+  color: #687187;
+}
+
+.logout-button {
+  padding: 10px 16px;
+  border: 1px solid #d8ddea;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #263f91;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background: #f4f6fb;
+}
+
+.error-message {
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #a32121;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .dashboard-shell {
+    padding: 20px 12px;
+  }
+
+  .dashboard-panel {
+    padding: 22px 16px;
+  }
+
+  .dashboard-panel h1 {
+    font-size: 23px;
+  }
+}
+
+.resume-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.resume-item:hover {
+  border-color: #b9c9ff;
+  background: #fafbff;
+}
+
+.resume-link:focus-visible {
+  outline: 2px solid #4969cc;
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+.back-link {
+  color: #263f91;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Resume download file */
+.resume-file-section {
+  margin-top: 24px;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.resume-actions .login-button {
+  width: auto;
+  margin-top: 0;
+}
+
+.resume-preview {
+  display: block;
+  width: 100%;
+  height: 700px;
+  margin-top: 24px;
+  border: 1px solid #e7eaf0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+@media (max-width: 480px) {
+  .resume-preview {
+    height: 500px;
+  }
+}
+
+/* Update resume */
+.resume-update-section {
+  margin-top: 24px;
+}
+
+.update-hint {
+  color: #687187;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume-update-section input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8ddea;
+  border-radius: 9px;
+  background: white;
+}
+
+/* Edit resume */
+.page-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.resume-update-section {
+  margin-top: 24px;
+}
+
+.update-hint {
+  color: #687187;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume-update-section input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8ddea;
+  border-radius: 9px;
+  background: white;
+}
+
+/* Delete resume button */
+.delete-button {
+  padding: 10px 16px;
+  border: 1px solid #e4bcbc;
+  border-radius: 8px;
+  background: #fff5f5;
+  color: #a32121;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #ffe7e7;
+}
+
+.delete-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Create resume */
+.resumes-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.resumes-section-header h2 {
+  margin: 0;
+}
+
+.upload-resume-link {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #263f91;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.upload-resume-link:hover {
+  background: #1d3277;
+}
+
+.selected-file {
+  margin-top: 10px;
+  color: #4c566d;
+  font-size: 13px;
+}
+
+/* Close pdf preview in the resume detail page */
+.login-button.preview-open-button {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: white;
+}
+
+.login-button.preview-open-button:hover {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
